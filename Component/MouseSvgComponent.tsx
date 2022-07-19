@@ -40,7 +40,7 @@ function Icon() {
         data-svg-origin="105.32126712799072 101.11200714111328"
         style={{
           WebkitTransformOrigin: 0,
-          MsTransformOrigin: 0,
+          // MsTransformOrigin: 0,
           transformOrigin: 0,
         }}
       ></path>
@@ -50,7 +50,7 @@ function Icon() {
           data-svg-origin="41.80017852783203 36.932167053222656"
           style={{
             WebkitTransformOrigin: 0,
-            MsTransformOrigin: 0,
+            // MsTransformOrigin: 0,
             transformOrigin: 0,
           }}
           opacity="1"
@@ -63,7 +63,7 @@ function Icon() {
               style={{
                 isolation: "isolate",
                 WebkitTransformOrigin: 0,
-                MsTransformOrigin: 0,
+                // MsTransformOrigin: 0,
                 transformOrigin: 0,
               }}
               data-svg-origin="90.30999755859375 48.470001220703125"
@@ -76,7 +76,7 @@ function Icon() {
               style={{
                 isolation: "isolate",
                 WebkitTransformOrigin: 0,
-                MsTransformOrigin: 0,
+                // MsTransformOrigin: 0,
                 transformOrigin: 0,
               }}
               data-svg-origin="41.80017852783203 54"
@@ -90,7 +90,7 @@ function Icon() {
               transform="translate(.81 2.576)"
               style={{
                 WebkitTransformOrigin: 0,
-                MsTransformOrigin: 0,
+                // MsTransformOrigin: 0,
                 transformOrigin: 0,
               }}
             ></path>
@@ -124,7 +124,7 @@ function Icon() {
             data-svg-origin="63.52000045776367 43.9721794128418"
             style={{
               WebkitTransformOrigin: 0,
-              MsTransformOrigin: 0,
+              // MsTransformOrigin: 0,
               transformOrigin: 0,
             }}
           >
@@ -133,7 +133,7 @@ function Icon() {
               data-svg-origin="80.51000213623047 105.0994873046875"
               style={{
                 WebkitTransformOrigin: 0,
-                MsTransformOrigin: 0,
+                // MsTransformOrigin: 0,
                 transformOrigin: 0,
               }}
             >
@@ -153,7 +153,7 @@ function Icon() {
               data-svg-origin="127.48999786376953 105.21952819824219"
               style={{
                 WebkitTransformOrigin: 0,
-                MsTransformOrigin: 0,
+                // MsTransformOrigin: 0,
                 transformOrigin: 0,
               }}
             >
@@ -173,7 +173,7 @@ function Icon() {
               transform="translate(-.332 -1.233)"
               style={{
                 WebkitTransformOrigin: 0,
-                MsTransformOrigin: 0,
+                // MsTransformOrigin: 0,
                 transformOrigin: 0,
               }}
             >
@@ -191,7 +191,7 @@ function Icon() {
                 transform="translate(-1.159 -.163)"
                 style={{
                   WebkitTransformOrigin: 0,
-                  MsTransformOrigin: 0,
+                  // MsTransformOrigin: 0,
                   transformOrigin: 0,
                 }}
               >
@@ -205,7 +205,7 @@ function Icon() {
                   data-svg-origin="112.54000091552734 77.77883911132812"
                   style={{
                     WebkitTransformOrigin: 0,
-                    MsTransformOrigin: 0,
+                    // MsTransformOrigin: 0,
                     transformOrigin: 0,
                   }}
                 ></path>
@@ -219,7 +219,7 @@ function Icon() {
                   data-svg-origin="88.92000579833984 78.29693603515625"
                   style={{
                     WebkitTransformOrigin: 0,
-                    MsTransformOrigin: 0,
+                    // MsTransformOrigin: 0,
                     transformOrigin: 0,
                   }}
                 ></path>
@@ -246,7 +246,7 @@ function Icon() {
                     transform="translate(-.455 .405)"
                     style={{
                       WebkitTransformOrigin: 0,
-                      MsTransformOrigin: 0,
+                      // MsTransformOrigin: 0,
                       transformOrigin: 0,
                     }}
                   ></path>
@@ -259,7 +259,7 @@ function Icon() {
                     transform="translate(-.455 .405)"
                     style={{
                       WebkitTransformOrigin: 0,
-                      MsTransformOrigin: 0,
+                      // MsTransformOrigin: 0,
                       transformOrigin: 0,
                     }}
                   ></path>
@@ -278,7 +278,7 @@ function Icon() {
                   opacity="0.48"
                   style={{
                     WebkitTransformOrigin: 0,
-                    MsTransformOrigin: 0,
+                    // MsTransformOrigin: 0,
                     transformOrigin: 0,
                   }}
                 ></path>
@@ -291,7 +291,7 @@ function Icon() {
                   transform="translate(-.38 .329)"
                   style={{
                     WebkitTransformOrigin: 0,
-                    MsTransformOrigin: 0,
+                    // MsTransformOrigin: 0,
                     transformOrigin: 0,
                   }}
                 ></path>
@@ -304,7 +304,7 @@ function Icon() {
                   transform="translate(-.38 .328)"
                   style={{
                     WebkitTransformOrigin: 0,
-                    MsTransformOrigin: 0,
+                    // MsTransformOrigin: 0,
                     transformOrigin: 0,
                   }}
                 ></path>
@@ -316,7 +316,7 @@ function Icon() {
                 transform="translate(-.453 .372)"
                 style={{
                   WebkitTransformOrigin: 0,
-                  MsTransformOrigin: 0,
+                  // MsTransformOrigin: 0,
                   transformOrigin: 0,
                 }}
               ></path>
