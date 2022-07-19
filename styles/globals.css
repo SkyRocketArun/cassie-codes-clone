@@ -61,19 +61,11 @@ body {
   --P-D-color: #404040;
   --P-L-color: #fafafa;
   --color-mint: #70dcbe;
-  --mouse-x: 0;
-  --mouse-y: 0;
 }
-
-.pointer {
-  transform: translate(var(--mouse-x), var(--mouse-y));
-}
-
 .container {
   max-width: 1200px;
   padding: 0px 20px;
   margin: 0 auto;
-  color: var(--mouse-x);
 }
 h1 {
   font-size: 60px;
