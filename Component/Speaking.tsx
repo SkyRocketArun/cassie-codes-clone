@@ -1,6 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
+import { useTheme } from "next-themes";
+import styled from 'styled-components'
 const Speaking = () => {
+    const { theme, setTheme } = useTheme();
     return (
         <>
             <section className='speaking_section'>
@@ -8,6 +11,7 @@ const Speaking = () => {
                     <div className='top_section'>
                         <div>
                             <h1 className='font-Mosk-Ultra-Bold text-[color:var(--P-D-color)] dark:text-[color:var(--P-L-color)]'>Speaking.</h1>
+
                             <p>The first time I got asked to speak at a conference, my gut reaction was “heck no. That sounds terrifying”.</p>
                             <p>So naturally I said yes. Since then I’ve spoken at conferences and meet-ups all over the world. It still terrifies me.</p>
                             <Link href="#">Check out my videos and upcoming talks.</Link>

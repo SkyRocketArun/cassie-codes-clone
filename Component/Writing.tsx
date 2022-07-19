@@ -11,7 +11,7 @@ const Writing = () => {
             <div className="container">
                 <motion.div className="drag_container" ref={constraintsRef}>
                     <h1 className='font-Mosk-Ultra-Bold text-[color:var(--P-D-color)] dark:text-[color:var(--P-L-color)]'>Writing.</h1>
-                    <motion.div className="items item1" drag dragConstraints={constraintsRef}>
+                    <motion.div className="items item1" drag dragConstraints={constraintsRef} style={{ background: "#4e3668" }}>
                         <div className="dot_section"><GoPrimitiveDot /><GoPrimitiveDot /><GoPrimitiveDot /></div>
                         <div className="box_content">
                             <h2>The many ways to change an  SVG fill on hover</h2>
@@ -27,7 +27,7 @@ const Writing = () => {
                             </div>
                         </div>
                     </motion.div>
-                    <motion.div className="items item2" drag dragConstraints={constraintsRef} >
+                    <motion.div className="items item2" drag dragConstraints={constraintsRef} style={{ background: "#4e3668" }} >
                         <div className="dot_section"><GoPrimitiveDot /><GoPrimitiveDot /><GoPrimitiveDot /></div>
                         <div className="box_content">
                             <h2 className="underline_line">The many ways to change an  SVG fill on hover</h2>
@@ -43,7 +43,7 @@ const Writing = () => {
                             </div>
                         </div>
                     </motion.div>
-                    <motion.div className="items item3" drag dragConstraints={constraintsRef} >
+                    <motion.div className="items item3" drag dragConstraints={constraintsRef} style={{ background: "#4e3668" }} >
                         <div className="dot_section"><GoPrimitiveDot /><GoPrimitiveDot /><GoPrimitiveDot /></div>
                         <div className="box_content">
                             <h2>The many ways to change an  SVG fill on hover</h2>
