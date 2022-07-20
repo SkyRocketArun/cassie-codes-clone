@@ -1,12 +1,13 @@
-import React from 'react'
 import Link from 'next/link'
 import { useTheme } from "next-themes";
 import styled from 'styled-components'
+
 const Speaking = () => {
     const { theme, setTheme } = useTheme();
+
     return (
         <>
-            <section className='speaking_section'>
+            <section className='speaking_section content_section'>
                 <div className="speaking container">
                     <div className='top_section'>
                         <div>

@@ -5,7 +5,7 @@ const Banner = () => {
     const { theme, setTheme } = useTheme();
 
     return (
-        <section>
+        <section className='content_section'>
             <div className={theme === "dark" ? 'bg dark' : 'bg light'}>
                 <div className='container' >
                     <div className='flex items-center'>

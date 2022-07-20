@@ -70,6 +70,10 @@ body {
 h1 {
   font-size: 60px;
 }
+.content_section {
+  z-index: 9;
+  position: relative;
+}
 /* Home banner */
 .bg {
   position: relative;
@@ -289,7 +293,7 @@ h1 {
   position: sticky;
   height: 100vh;
   bottom: 0px;
-  z-index: -1;
+  z-index: 1;
   background: #774069;
   display: flex;
   justify-content: center;

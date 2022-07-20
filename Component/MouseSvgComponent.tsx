@@ -1,5 +1,4 @@
-import React from "react";
-
+import React from 'react'
 function Icon() {
   return (
     <svg
@@ -40,7 +39,7 @@ function Icon() {
         data-svg-origin="105.32126712799072 101.11200714111328"
         style={{
           WebkitTransformOrigin: 0,
-          // MsTransformOrigin: 0,
+          MsTransformOrigin: 0,
           transformOrigin: 0,
         }}
       ></path>
@@ -50,7 +49,7 @@ function Icon() {
           data-svg-origin="41.80017852783203 36.932167053222656"
           style={{
             WebkitTransformOrigin: 0,
-            // MsTransformOrigin: 0,
+            MsTransformOrigin: 0,
             transformOrigin: 0,
           }}
           opacity="1"
@@ -63,7 +62,7 @@ function Icon() {
               style={{
                 isolation: "isolate",
                 WebkitTransformOrigin: 0,
-                // MsTransformOrigin: 0,
+                MsTransformOrigin: 0,
                 transformOrigin: 0,
               }}
               data-svg-origin="90.30999755859375 48.470001220703125"
@@ -76,7 +75,7 @@ function Icon() {
               style={{
                 isolation: "isolate",
                 WebkitTransformOrigin: 0,
-                // MsTransformOrigin: 0,
+                MsTransformOrigin: 0,
                 transformOrigin: 0,
               }}
               data-svg-origin="41.80017852783203 54"
@@ -90,7 +89,7 @@ function Icon() {
               transform="translate(.81 2.576)"
               style={{
                 WebkitTransformOrigin: 0,
-                // MsTransformOrigin: 0,
+                MsTransformOrigin: 0,
                 transformOrigin: 0,
               }}
             ></path>
@@ -124,7 +123,7 @@ function Icon() {
             data-svg-origin="63.52000045776367 43.9721794128418"
             style={{
               WebkitTransformOrigin: 0,
-              // MsTransformOrigin: 0,
+              MsTransformOrigin: 0,
               transformOrigin: 0,
             }}
           >
@@ -133,7 +132,7 @@ function Icon() {
               data-svg-origin="80.51000213623047 105.0994873046875"
               style={{
                 WebkitTransformOrigin: 0,
-                // MsTransformOrigin: 0,
+                MsTransformOrigin: 0,
                 transformOrigin: 0,
               }}
             >
@@ -153,7 +152,7 @@ function Icon() {
               data-svg-origin="127.48999786376953 105.21952819824219"
               style={{
                 WebkitTransformOrigin: 0,
-                // MsTransformOrigin: 0,
+                MsTransformOrigin: 0,
                 transformOrigin: 0,
               }}
             >
@@ -173,7 +172,7 @@ function Icon() {
               transform="translate(-.332 -1.233)"
               style={{
                 WebkitTransformOrigin: 0,
-                // MsTransformOrigin: 0,
+                MsTransformOrigin: 0,
                 transformOrigin: 0,
               }}
             >
@@ -191,7 +190,7 @@ function Icon() {
                 transform="translate(-1.159 -.163)"
                 style={{
                   WebkitTransformOrigin: 0,
-                  // MsTransformOrigin: 0,
+                  MsTransformOrigin: 0,
                   transformOrigin: 0,
                 }}
               >
@@ -205,7 +204,7 @@ function Icon() {
                   data-svg-origin="112.54000091552734 77.77883911132812"
                   style={{
                     WebkitTransformOrigin: 0,
-                    // MsTransformOrigin: 0,
+                    MsTransformOrigin: 0,
                     transformOrigin: 0,
                   }}
                 ></path>
@@ -219,7 +218,7 @@ function Icon() {
                   data-svg-origin="88.92000579833984 78.29693603515625"
                   style={{
                     WebkitTransformOrigin: 0,
-                    // MsTransformOrigin: 0,
+                    MsTransformOrigin: 0,
                     transformOrigin: 0,
                   }}
                 ></path>
@@ -246,7 +245,7 @@ function Icon() {
                     transform="translate(-.455 .405)"
                     style={{
                       WebkitTransformOrigin: 0,
-                      // MsTransformOrigin: 0,
+                      MsTransformOrigin: 0,
                       transformOrigin: 0,
                     }}
                   ></path>
@@ -259,10 +258,15 @@ function Icon() {
                     transform="translate(-.455 .405)"
                     style={{
                       WebkitTransformOrigin: 0,
-                      // MsTransformOrigin: 0,
+                      MsTransformOrigin: 0,
                       transformOrigin: 0,
                     }}
                   ></path>
+
+
+                  <path className="hair-back hair" d="M127.63,45.17c2.65,1.35,11.15,4.2,16.07,23.12,2.88,20.58,3.79,26.07,4.68,30.6s1.2,11.6,6.3,21.15.85,14.65.85,14.65l-7.63,7.08s3.45-12.65-2.63-18.13c0,0,2,14,0,17s-8.75,6.92-8.75,6.92-2.48-4.53-5.06-9.64,2.78,11,.08,12.09-18.82,6.25-30.6,3.86-21.53-5-24-5.79c0,0,2.75-1.37.77-7.62s-1-7.59-1.52-7-2.1,3-1,7.49a7.45,7.45,0,0,1-1.92,7.18s-7.11-4.65-12.77-5.21A51.35,51.35,0,0,1,51,141.14s-5-11.43-.4-23.56S58,104.1,58.32,88.87s2.41-34.66,20.41-45S116.87,35.4,127.63,45.17Z" fill="url(#linear-gradient)" />
+
+
                 </g>
                 <path
                   fill="none"
@@ -278,7 +282,7 @@ function Icon() {
                   opacity="0.48"
                   style={{
                     WebkitTransformOrigin: 0,
-                    // MsTransformOrigin: 0,
+                    MsTransformOrigin: 0,
                     transformOrigin: 0,
                   }}
                 ></path>
@@ -291,7 +295,7 @@ function Icon() {
                   transform="translate(-.38 .329)"
                   style={{
                     WebkitTransformOrigin: 0,
-                    // MsTransformOrigin: 0,
+                    MsTransformOrigin: 0,
                     transformOrigin: 0,
                   }}
                 ></path>
@@ -304,7 +308,7 @@ function Icon() {
                   transform="translate(-.38 .328)"
                   style={{
                     WebkitTransformOrigin: 0,
-                    // MsTransformOrigin: 0,
+                    MsTransformOrigin: 0,
                     transformOrigin: 0,
                   }}
                 ></path>
@@ -316,7 +320,7 @@ function Icon() {
                 transform="translate(-.453 .372)"
                 style={{
                   WebkitTransformOrigin: 0,
-                  // MsTransformOrigin: 0,
+                  MsTransformOrigin: 0,
                   transformOrigin: 0,
                 }}
               ></path>
@@ -327,5 +331,4 @@ function Icon() {
     </svg>
   );
 }
-
 export default Icon;

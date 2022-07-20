@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Writing = () => {
     const constraintsRef = useRef(null);
     return (
-        <section className="writing_section">
+        <section className="writing_section content_section">
             <div className="container">
                 <motion.div className="drag_container" ref={constraintsRef}>
                     <h1 className='font-Mosk-Ultra-Bold text-[color:var(--P-D-color)] dark:text-[color:var(--P-L-color)]'>Writing.</h1>
