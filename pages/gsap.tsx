@@ -2,13 +2,18 @@ import React, { useEffect, useRef, useState } from 'react'
 
 
 const GsapTest = () => {
-    const faceref = useRef(null);
-    useEffect(() => {
-        const face = faceref.current;
-        console.log(face);
-    }, []);
-    // 👇️ get global mouse coordinates
     const [globalCoords, setGlobalCoords] = useState({ x: 2, y: 0 });
+
+
+
+    // using this ref for getting id dom
+    // const faceref = useRef(null);
+    // useEffect(() => {
+    //     const face = faceref.current;
+    //     console.log(face);
+    // }, []);
+
+    // 👇️ get global mouse coordinates
 
     useEffect(() => {
         const handleWindowMouseMove = event => {
@@ -29,10 +34,7 @@ const GsapTest = () => {
             dynamicHeight: window.innerHeight
         })
     }
-    const [screenSize, getDimension] = useState({
-        dynamicWidth: 0,
-        dynamicHeight: 0
-    });
+    const [screenSize, getDimension] = useState({ dynamicWidth: 0, dynamicHeight: 0 });
     useEffect(() => {
         window.addEventListener('resize', setDimension);
         return (() => {
@@ -43,13 +45,14 @@ const GsapTest = () => {
         setDimension()
     }, [])
     // We need to convert those pixel values into percentages of the window height and width.
+
+    function movePointer() {
+        const x = percentage(globalCoords.x, screenSize.dynamicWidth) - 50;
+        const y = percentage(globalCoords.y, screenSize.dynamicHeight) - 50;
+        console.log('new value ', x, y)
+    }
     function percentage(partialValue, totalValue) {
         return (100 * partialValue) / totalValue;
-    }
-    function movePointer() {
-        const x = percentage(globalCoords.x, screenSize.dynamicWidth);
-        const y = percentage(globalCoords.y, screenSize.dynamicHeight);
-        // console.log('new value ', x, y)
     }
     useEffect(() => {
         movePointer()
@@ -63,8 +66,6 @@ const GsapTest = () => {
                     <li>Width: <strong>{screenSize.dynamicWidth}</strong></li>
                     <li>Height: <strong>{screenSize.dynamicHeight}</strong></li>
                 </ul>
-
-
                 <h2>
                     Global coords: {globalCoords.x} {globalCoords.y}
                 </h2>
@@ -423,9 +424,9 @@ const GsapTest = () => {
                     </g>
                 </svg>
             </div>
-            <div ref={faceref} id="container">
+            {/* <div ref={faceref} id="container">
                 <h2>Some content here</h2>
-            </div>
+            </div> */}
         </div >
     )
 }

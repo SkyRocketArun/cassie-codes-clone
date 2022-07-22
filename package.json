@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@popmotion/popcorn": "^0.4.4",
     "@types/styled-components": "^5.1.25",
     "framer-motion": "^6.5.1",
     "gsap": "^3.10.4",
