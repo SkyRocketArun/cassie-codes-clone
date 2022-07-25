@@ -301,16 +301,6 @@ const GsapTest = () => {
                         </g>
                     </g>
                 </svg>
-
-
-
-
-
-
-
-
-
-
             </div>
         </MainSection >
     )

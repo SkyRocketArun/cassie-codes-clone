@@ -1,4 +1,5 @@
 import Banner from "../Component/Banner"
+
 import PlayTime from "../Component/PlayTime"
 import Speaking from "../Component/Speaking"
 import Writing from "../Component/Writing"
@@ -11,6 +12,7 @@ const HomePage = () => {
             <Writing />
             <PlayTime />
             <Speaking />
+
         </>
     )
 }
