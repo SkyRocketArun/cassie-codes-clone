@@ -55,7 +55,7 @@ function PlayTime() {
     return (
         <>
             <PlayBackground>
-                <h1>Let's Play Something<p>Drag These Balls</p></h1>
+                <h1>Let&apos;s Play Something<p>Drag These Balls</p></h1>
                 <PlaySection className="app">
 
                     <motion.div
