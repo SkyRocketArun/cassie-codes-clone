@@ -8,7 +8,7 @@ const GsapTest = () => {
     // 👇️ get global mouse coordinates
 
     useEffect(() => {
-        const handleWindowMouseMove = event => {
+        const handleWindowMouseMove = (event: any) => {
             setGlobalCoords({
                 x: event.screenX,
                 y: event.screenY,
@@ -46,7 +46,7 @@ const GsapTest = () => {
             }
         )
     }
-    function percentage(partialValue, totalValue) {
+    function percentage(partialValue: any, totalValue: any) {
         return (100 * partialValue) / totalValue;
     }
     useEffect(() => {
@@ -56,18 +56,21 @@ const GsapTest = () => {
     // Gsap code 
     // gsap.ticker.add(movePointer) 
 
-    const Face = useRef()
-    const Eye = useRef()
-    const InnerFace = useRef()
-    const HairFront = useRef()
-    const HairBack = useRef()
-    const EarRight = useRef()
-    const EarLeft = useRef()
-    const EyeBrowRight = useRef()
-    const EyeBrowLeft = useRef()
-    const RedCircle = useRef()
+    const Face = useRef(null)
+    const Eye = useRef(null)
+    const InnerFace = useRef(null)
+    const HairFront = useRef(null)
+    const HairBack = useRef(null)
+    const EarRight = useRef(null)
+    const EarLeft = useRef(null)
+    const EyeBrowRight = useRef(null)
+    const EyeBrowLeft = useRef(null)
+    const RedCircle = useRef(null)
 
     useEffect(() => {
+
+
+
         gsap.to(Face.current, {
             xPercent: newCodes.x / 30,
             yPercent: newCodes.y / 30
@@ -301,16 +304,6 @@ const GsapTest = () => {
                         </g>
                     </g>
                 </svg>
-
-
-
-
-
-
-
-
-
-
             </div>
         </MainSection >
     )
