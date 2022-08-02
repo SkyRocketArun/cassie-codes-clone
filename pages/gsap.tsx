@@ -52,7 +52,6 @@ const GsapTest = () => {
     useEffect(() => {
         movePointer()
     }, [globalCoords, screenSize])
-
     // Gsap code 
     // gsap.ticker.add(movePointer) 
 
@@ -68,9 +67,6 @@ const GsapTest = () => {
     const RedCircle = useRef(null)
 
     useEffect(() => {
-
-
-
         gsap.to(Face.current, {
             xPercent: newCodes.x / 30,
             yPercent: newCodes.y / 30
@@ -110,7 +106,7 @@ const GsapTest = () => {
             yPercent: newCodes.y
         });
         console.log('Coordinates X', newCodes.x, 'and Y', newCodes.y)
-    });
+    }, [globalCoords]);
     return (
         <MainSection>
             <div>

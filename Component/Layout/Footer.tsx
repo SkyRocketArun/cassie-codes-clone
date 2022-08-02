@@ -1,10 +1,11 @@
-import Link from 'next/link'
+
 import React from 'react'
 import Icon from '../MouseSvgComponent'
 import GsapTest from './MousePoint'
-
+import { useTheme } from "next-themes";
 
 const Footer = () => {
+    const { theme, setTheme } = useTheme();
     return (
         <div className="Footer">
             <div className='container'>
@@ -14,9 +15,7 @@ const Footer = () => {
                     </div>
                     <div className='mouse_pointer'>
                         <Icon />
-                        <Link href='/gsap'>
-                            Mouse Tracker
-                        </Link>
+
                     </div>
                 </div>
             </div>

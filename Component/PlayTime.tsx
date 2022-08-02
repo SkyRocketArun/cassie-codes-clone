@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { render } from "react-dom";
+import { useTheme } from "next-themes";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { distance } from "@popmotion/popcorn";
 // import "./styles.css";
@@ -11,6 +11,7 @@ const size = 60;
 const gap = 10;
 
 const Square = ({ active, setActive, colIndex, rowIndex, x, y }: { active: any, setActive: any, colIndex: any, rowIndex: any, x: any, y: any }) => {
+
     const isDragging = colIndex === active.col && rowIndex === active.row;
     const diagonalIndex = (360 / 6) * (colIndex + rowIndex);
     const d = distance(
@@ -46,15 +47,14 @@ const Square = ({ active, setActive, colIndex, rowIndex, x, y }: { active: any, 
         />
     );
 };
-
 function PlayTime() {
     const [active, setActive] = useState({ row: 0, col: 0 });
     const x = useMotionValue(0);
     const y = useMotionValue(0);
-
+    const { theme, setTheme } = useTheme();
     return (
         <>
-            <PlayBackground>
+            <PlayBackground theme={theme}>
                 <h1>Let&apos;s Play Something<p>Drag These Balls</p></h1>
                 <PlaySection className="app">
 
@@ -101,20 +101,19 @@ export default PlayTime
 const PlayBackground = styled.section`
 position: relative;
 z-index: 9;
-background: #121212;
 overflow: hidden;
+background: ${props => props.theme === 'light' ? '#ffffff' : '#18171a'};
     h1{
-    background: #121212;
     text-align: center;
     position: absolute;
     width: 100%;
     top:44px;
+    font-weight:600;
     }
     p{
         font-size:20px;
     }
 `
-
 const PlaySection = styled.div`
 font-family: sans-serif;
 text-align: center;
@@ -127,4 +126,5 @@ margin: 0;
 padding: 0;
 perspective: 1000px;
 overflow: hidden;
+
 `

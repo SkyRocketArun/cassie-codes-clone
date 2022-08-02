@@ -1,26 +1,48 @@
 import React from 'react'
 import { useTheme } from "next-themes";
 import SvgComponent from './SvgComponent'
+import styled from 'styled-components';
 const Banner = () => {
     const { theme, setTheme } = useTheme();
 
     return (
-        <section className='content_section'>
+        <BannerSection className='content_section'>
             <div className={theme === "dark" ? 'bg dark' : 'bg light'}>
                 <div className='container' >
-                    <div className='flex items-center'>
-                        <div className='w-[680px]'>
-                            {/* <img src="/cartoon.svg" alt="Logo" /> */}
+                    <div className='main_box flex items-center'>
+                        <div className='light_box'>
                             <SvgComponent />
                         </div>
-                        <div className='flex-1'>
+                        <div className='content_section flex-1'>
                             <p className='font-Jenthill w-fit text-[30px] -rotate-12 text-[color:var(--P-D-color)] dark:text-[color:var(--P-L-color)]'>👋 Hi Im Delta</p>
-                            <h1 className='font-Mosk-Ultra-Bold text-[color:var(--P-D-color)] dark:text-[color:var(--P-L-color)]'>I like making <span className={theme === "dark" ? 'transparent dark' : 'transparent light'}>fun</span>, interactive things with code. I also <span className={theme === "dark" ? 'transparent dark' : 'transparent light'}>talk</span> & <span className={theme === "dark" ? 'transparent dark' : 'transparent light'}>write</span> about those things.</h1></div>
+                            <h1 className=' font-Mosk-Ultra-Bold text-[color:var(--P-D-color)] dark:text-[color:var(--P-L-color)]'>I like making <span className={theme === "dark" ? 'transparent dark' : 'transparent light'}>fun</span>, interactive things with code. I also <span className={theme === "dark" ? 'transparent dark' : 'transparent light'}>talk</span> & <span className={theme === "dark" ? 'transparent dark' : 'transparent light'}>write</span> about those things.</h1></div>
                     </div>
                 </div>
             </div>
-        </section>
+        </BannerSection>
     )
 }
 
 export default Banner
+const BannerSection = styled.section`
+    .main_box{
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+    .main_box > div{
+        flex:1;
+        width: 100%;
+    }
+    .light_box{
+        /* width: 558px; */
+    }
+    .content_section{
+        @media (max-width: 768px) {
+            padding-bottom:30px;
+        }
+    }
+    .content_section h1{
+        font-size: 48px;
+    }
+`
