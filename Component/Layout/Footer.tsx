@@ -1,4 +1,4 @@
-
+import Link from 'next/link'
 import React from 'react'
 import Icon from '../MouseSvgComponent'
 import GsapTest from './MousePoint'
@@ -15,7 +15,9 @@ const Footer = () => {
                     </div>
                     <div className='mouse_pointer'>
                         <Icon />
-
+                        <Link href='/gsap'>
+                            Gsap
+                        </Link>
                     </div>
                 </div>
             </div>
