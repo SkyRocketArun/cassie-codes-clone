@@ -31,9 +31,9 @@ const Footer = () => {
                 <div className='main_section bg-[#fff] dark:bg-[#2c2c2c]'>
                     <div>
                         <h1 className='font-Mosk-Ultra-Bold text-[color:var(--P-D-color)] dark:text-[color:var(--P-L-color)]'>Hey there!</h1>
-                        {/* <Link href='mailto:arun7807224868@gmail.com'> */}
-                        <a className='text-[22px] cursor-pointer relative z-50' onClick={Control}>Ping me a Message </a>
-                        {/* </Link> */}
+                        <Link href='mailto:arun7807224868@gmail.com'>
+                            <a className='text-[22px] cursor-pointer relative z-50' onClick={Control}>Ping me a Message </a>
+                        </Link>
                     </div>
                     <div className='mouse_pointer'>
                         <GsapTest />
