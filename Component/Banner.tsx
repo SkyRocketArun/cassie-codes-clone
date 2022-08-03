@@ -1,10 +1,9 @@
 import React from 'react'
 import { useTheme } from "next-themes";
-import SvgComponent from './SvgComponent'
+import SvgComponent from './svg/LightBulb'
 import styled from 'styled-components';
 const Banner = () => {
     const { theme, setTheme } = useTheme();
-
     return (
         <BannerSection className='content_section'>
             <div className={theme === "dark" ? 'bg dark' : 'bg light'}>
@@ -30,16 +29,20 @@ const BannerSection = styled.section`
             flex-direction: column;
         }
     }
-    .main_box > div{
+
+    .light_box{
         flex:1;
         width: 100%;
-    }
-    .light_box{
-        /* width: 558px; */
-    }
-    .content_section{
         @media (max-width: 768px) {
-            padding-bottom:30px;
+            width:80%;
+        }
+    }
+    
+    .content_section{
+        flex:1;
+        width: 100%;
+        @media (max-width: 768px) {
+            padding-bottom:146px;
         }
     }
     .content_section h1{

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { motion } from "framer-motion";
 import { GoPrimitiveDot } from 'react-icons/go'
 import { BsArrowRight } from 'react-icons/bs'
@@ -6,78 +6,87 @@ import { useTheme } from "next-themes";
 import Link from 'next/link';
 import styled from 'styled-components';
 const Writing = () => {
-    const constraintsRef = useRef(null);
-    const { theme, setTheme } = useTheme();
-    return (
-        <WritingSection className="writing_section content_section" theme={theme}>
-            <div className="container">
-                <motion.div className="drag_container" ref={constraintsRef}>
-                    <h1 className='font-Mosk-Ultra-Bold text-[color:var(--P-D-color)] dark:text-[color:var(--P-L-color)]'>Writing.</h1>
-                    <motion.div className="items item1" drag dragConstraints={constraintsRef} >
-                        <div className="dot_section"><GoPrimitiveDot /><GoPrimitiveDot /><GoPrimitiveDot /></div>
-                        <div className="box_content">
-                            <h2>The many ways to change an  SVG fill on hover</h2>
-                            <p>How do you go about adding a colored hover effect to an icon if it’s not an inline SVG? Let’s dive into what’s possible with CSS and SVG filters. </p>
-                            <div className="btns">
-                                <Link href='#'>
-                                    CSS tricks
-                                </Link>
-                                <Link href='#'>
-                                    <a>Read post <BsArrowRight /></a>
-                                </Link>
+  const constraintsRef = useRef(null);
+  const { theme, setTheme } = useTheme();
+  // const [theme, setTheme] = useState();
+  // const func = () => {
+  //   setTheme(useTheme)
+  // }
+  // useEffect(() => {
+  //   func()
+  // }, [theme])
+  // console.log('Themeeee', theme.theme)
+  console.log('Themeeee', theme)
+  return (
+    <WritingSection theme={theme}>
+      <div className="container">
+        <motion.div className="drag_container" ref={constraintsRef}>
+          <h1 className='font-Mosk-Ultra-Bold text-[color:var(--P-D-color)] dark:text-[color:var(--P-L-color)]'>Writing.</h1>
+          <motion.div className="items item1" drag dragConstraints={constraintsRef} >
+            <div className="dot_section"><GoPrimitiveDot /><GoPrimitiveDot /><GoPrimitiveDot /></div>
+            <div className="box_content">
+              <h2>The many ways to change an  SVG fill on hover</h2>
+              <p>How do you go about adding a colored hover effect to an icon if it’s not an inline SVG? Let’s dive into what’s possible with CSS and SVG filters. </p>
+              <div className="btns">
+                <Link href='#'>
+                  CSS tricks
+                </Link>
+                <Link href='#'>
+                  <a>Read post <BsArrowRight /></a>
+                </Link>
 
-                            </div>
-                        </div>
-                    </motion.div>
-                    <motion.div className="items item2" drag dragConstraints={constraintsRef}  >
-                        <div className="dot_section"><GoPrimitiveDot /><GoPrimitiveDot /><GoPrimitiveDot /></div>
-                        <div className="box_content">
-                            <h2 className="underline_line">The many ways to change an  SVG fill on hover</h2>
-                            <p>How do you go about adding a colored hover effect to an icon if it’s not an inline SVG? Let’s dive into what’s possible with CSS and SVG filters. </p>
-                            <div className="btns">
-                                <Link href='#'>
-                                    CSS tricks
-                                </Link>
-                                <Link href='#'>
-                                    <a>Read post <BsArrowRight /></a>
-                                </Link>
-
-                            </div>
-                        </div>
-                    </motion.div>
-                    <motion.div className="items item3" drag dragConstraints={constraintsRef} >
-                        <div className="dot_section"><GoPrimitiveDot /><GoPrimitiveDot /><GoPrimitiveDot /></div>
-                        <div className="box_content">
-                            <h2>The many ways to change an  SVG fill on hover</h2>
-                            <p>How do you go about adding a colored hover effect to an icon if it’s not an inline SVG? Let’s dive into what’s possible with CSS and SVG filters. </p>
-                            <div className="btns">
-                                <Link href='#'>
-                                    CSS tricks
-                                </Link>
-                                <Link href='#'>
-                                    <a>Read post <BsArrowRight /></a>
-                                </Link>
-
-                            </div>
-                        </div>
-                    </motion.div>
-                    <button className="write_button">visit my blog...</button>
-                </motion.div>
+              </div>
             </div>
-        </WritingSection>
+          </motion.div>
+          <motion.div className="items item2" drag dragConstraints={constraintsRef}  >
+            <div className="dot_section"><GoPrimitiveDot /><GoPrimitiveDot /><GoPrimitiveDot /></div>
+            <div className="box_content">
+              <h2 >The many ways to change an  SVG fill on hover</h2>
+              <p>How do you go about adding a colored hover effect to an icon if it’s not an inline SVG? Let’s dive into what’s possible with CSS and SVG filters. </p>
+              <div className="btns">
+                <Link href='#'>
+                  CSS tricks
+                </Link>
+                <Link href='#'>
+                  <a>Read post <BsArrowRight /></a>
+                </Link>
 
-    )
+              </div>
+            </div>
+          </motion.div>
+          <motion.div className="items item3" drag dragConstraints={constraintsRef} >
+            <div className="dot_section"><GoPrimitiveDot /><GoPrimitiveDot /><GoPrimitiveDot /></div>
+            <div className="box_content">
+              <h2>The many ways to change an  SVG fill on hover</h2>
+              <p>How do you go about adding a colored hover effect to an icon if it’s not an inline SVG? Let’s dive into what’s possible with CSS and SVG filters. </p>
+              <div className="btns">
+                <Link href='#'>
+                  CSS tricks
+                </Link>
+                <Link href='#'>
+                  <a>Read post <BsArrowRight /></a>
+                </Link>
+
+              </div>
+            </div>
+          </motion.div>
+          <button className="write_button">visit my blog...</button>
+        </motion.div>
+      </div>
+    </WritingSection>
+
+  )
 }
 export default Writing
 const WritingSection = styled.section`
-
-    background: ${props => props.theme === 'light' ? '#b289da' : '#4e3668'};
-.writing_section {
+  background: ${props => props.theme === 'light' ? '#b289da' : '#4e3668'};
+  z-index: 9;
+  position: relative;
   overflow: hidden;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
-}
+
 .drag_container {
   width: 100%;
   height: 100%;
@@ -171,22 +180,5 @@ const WritingSection = styled.section`
   display: flex;
   align-items: center;
   gap: 4px;
-}
-.underline_line {
-  line-height: 1 !important;
-  display: inline;
-  background-image: linear-gradient(
-    transparent 50%,
-    #774069 50%,
-    #774069 85%,
-    transparent 85%,
-    transparent 100%
-  );
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-}
-.underline_line:hover {
-  transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-size: 100% 100%;
 }
 `

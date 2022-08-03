@@ -74,6 +74,7 @@ h1 {
   z-index: 9;
   position: relative;
 }
+
 /* Home banner */
 .bg {
   position: relative;
@@ -100,28 +101,6 @@ h1 {
 }
 .transparent.light:hover {
   -webkit-text-fill-color: unset;
-}
-/* Footer */
-.Footer {
-  position: sticky;
-  height: 100vh;
-  bottom: 0px;
-  z-index: 1;
-  background: #774069;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.main_section {
-  width: 100%;
-  height: 500px;
-  background: #2c2c2c;
-  align-items: center;
-  justify-content: space-around;
-  display: flex;
-}
-.mouse_pointer {
-  width: 50%;
 }
 
 /* svg animation  */

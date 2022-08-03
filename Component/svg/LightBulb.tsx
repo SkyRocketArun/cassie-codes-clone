@@ -10,13 +10,13 @@ function SvgComponent() {
             viewBox="0 0 374.47 469.64"
         >
             <defs>
-                <clipPath id="b">
+                <clipPath id="bb">
                     <path
                         fill="none"
                         d="M133.98 248.2H186.35999999999999V330.03999999999996H133.98z"
                     />
                 </clipPath>
-                <clipPath id="a">
+                <clipPath id="aa">
                     <path
                         fill="none"
                         d="M128.39 240.73H312.67999999999995V336.46999999999997H128.39z"

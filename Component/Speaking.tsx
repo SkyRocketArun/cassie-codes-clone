@@ -133,7 +133,6 @@ const SpeackingSection = styled.section`
   position: absolute;
   top: 24px;
   left: -196px;
-
   background: ${props => props.theme === 'light' ? '#000' : '#fff'};
   height: 2px;
   width: 170px;
@@ -159,13 +158,7 @@ const SpeackingSection = styled.section`
   z-index: 20;
   line-height: 1;
   display: inline;
-  background-image: linear-gradient(
-    transparent 50%,
-    #774069 50%,
-    #774069 85%,
-    transparent 85%,
-    transparent 100%
-  );
+  background-image: linear-gradient(transparent 50%, ${props => props.theme == 'light' ? '#f2c3c0 50%,#f2c3c0 85%' : '#774069 50%,#774069 85%'},transparent 85%,transparent 100%);
   background-repeat: no-repeat;
   background-size: 0% 100%;
 }

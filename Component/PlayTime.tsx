@@ -52,12 +52,12 @@ function PlayTime() {
     const x = useMotionValue(0);
     const y = useMotionValue(0);
     const { theme, setTheme } = useTheme();
+
     return (
         <>
             <PlayBackground theme={theme}>
                 <h1>Let&apos;s Play Something<p>Drag These Balls</p></h1>
                 <PlaySection className="app">
-
                     <motion.div
                         animate={{ "--base-hue": 360 } as any}
                         initial={{ "--base-hue": 0 } as any}
@@ -76,7 +76,6 @@ function PlayTime() {
                                 perspective: 500
                             }}
                         >
-
                             {grid.map((row, rowIndex) =>
                                 row.map((_item, colIndex) => (
                                     <Square
@@ -115,6 +114,7 @@ background: ${props => props.theme === 'light' ? '#ffffff' : '#18171a'};
     }
 `
 const PlaySection = styled.div`
+cursor: grab;
 font-family: sans-serif;
 text-align: center;
 width: 100vw;
