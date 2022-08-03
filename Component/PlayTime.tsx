@@ -55,9 +55,9 @@ function PlayTime() {
 
     return (
         <>
-            <PlayBackground theme={theme}>
-                <h1>Let&apos;s Play Something<p>Drag These Balls</p></h1>
-                <PlaySection className="app">
+            <section className='bg-[#ffffff] dark:bg-[#18171a] overflow-hidden relative z-50'>
+                <h1 className='text-center absolute left-[50%] -translate-x-[50%] text-[44px] font-extrabold pt-8'>Let&apos;s Play Something<p className="text-[22px]">Drag These Balls</p></h1>
+                <PlaySection className="app text-center h-screen cursor-grab">
                     <motion.div
                         animate={{ "--base-hue": 360 } as any}
                         initial={{ "--base-hue": 0 } as any}
@@ -92,30 +92,14 @@ function PlayTime() {
                         </motion.div>
                     </motion.div>
                 </PlaySection>
-            </PlayBackground>
+            </section>
         </>
     );
 }
 export default PlayTime
-const PlayBackground = styled.section`
-position: relative;
-z-index: 9;
-overflow: hidden;
-background: ${props => props.theme === 'light' ? '#ffffff' : '#18171a'};
-    h1{
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    top:44px;
-    font-weight:600;
-    }
-    p{
-        font-size:20px;
-    }
-`
+
 const PlaySection = styled.div`
-cursor: grab;
-font-family: sans-serif;
+/* cursor: grab;
 text-align: center;
 width: 100vw;
 height: 100vh;
@@ -125,6 +109,6 @@ place-items: center;
 margin: 0;
 padding: 0;
 perspective: 1000px;
-overflow: hidden;
+overflow: hidden; */
 
 `

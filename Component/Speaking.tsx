@@ -6,17 +6,17 @@ const Speaking = () => {
   const { theme, setTheme } = useTheme();
   return (
     <>
-      <SpeackingSection className='speaking_section content_section' theme={theme}>
+      <SpeackingSection className='speaking_section content_section bg-[#fef8b4] dark:bg-[#2c2a32] md:pt-[200px] pt-[80px]' theme={theme}>
         <div className="speaking container">
-          <div className='top_section'>
-            <div>
+          <div className='top_section flex md:flex-row flex-col' >
+            <div className='flex-1'>
               <h1 className='font-Mosk-Ultra-Bold text-[color:var(--P-D-color)] dark:text-[color:var(--P-L-color)]'>Speaking.</h1>
-              <p>The first time I got asked to speak at a conference, my gut reaction was “heck no. That sounds terrifying”.</p>
-              <p>So naturally I said yes. Since then I’ve spoken at conferences and meet-ups all over the world. It still terrifies me.</p>
-              <Link href="#">Check out my videos and upcoming talks.</Link>
+              <p className='text-[20px] my-[16px]'>The first time I got asked to speak at a conference, my gut reaction was “heck no. That sounds terrifying”.</p>
+              <p className='text-[20px] my-[16px]'>So naturally I said yes. Since then I’ve spoken at conferences and meet-ups all over the world. It still terrifies me.</p>
+              <Link href="#" ><a className='underline text-[24px]'>Check out my videos and upcoming talks.</a></Link>
             </div>
-            <div className='img_section'>
-              <img src='./images/bg.jpg' />
+            <div className='flex-1 img_section'>
+              <img src='./images/bg.jpg' className='w-[400px] border-2 border-white shadow-[8px 8px 0px 0px_#ffffff] mx-auto' style={{ boxShadow: '8px 8px 0px 0px_#ffffff' }} />
             </div>
           </div>
           <div className='bottom_section'>
@@ -72,38 +72,22 @@ const Speaking = () => {
           </div>
         </div>
       </SpeackingSection>
-
     </>
   )
 }
 
 export default Speaking
 const SpeackingSection = styled.section`
-    background: #2c2a32;
-    background: ${props => props.theme === 'light' ? '#fef8b4' : '#2c2a32'};
-  padding-top: 200px;
-  @media (max-width: 768px) {
-    padding-top: 80px;
-  }
-.speaking .top_section {
-  display: flex;
-  @media (max-width: 768px){
-    flex-direction: column;
-    gap:30px;
-  }
-}
-.top_section > div {
-  flex:1;
-}
-.top_section p {
+
+/* .top_section p {
   margin: 16px 0px;
   font-size: 20px;
   font-family: system-ui;
-}
-.top_section a {
+} */
+/* .top_section a {
   text-decoration: underline;
   font-size: 24px;
-}
+} */
 .img_section > img {
   border: 2px solid #fff;
   width: 400px;

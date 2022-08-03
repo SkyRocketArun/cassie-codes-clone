@@ -8,20 +8,13 @@ import styled from 'styled-components';
 const Writing = () => {
   const constraintsRef = useRef(null);
   const { theme, setTheme } = useTheme();
-  // const [theme, setTheme] = useState();
-  // const func = () => {
-  //   setTheme(useTheme)
-  // }
-  // useEffect(() => {
-  //   func()
-  // }, [theme])
-  // console.log('Themeeee', theme.theme)
-  console.log('Themeeee', theme)
+
+  console.log('Themeeddsfdsfdee', theme)
   return (
-    <WritingSection theme={theme}>
+    <WritingSection theme={theme} className='bg-[#b289da] dark:bg-[#4e3668]'>
       <div className="container">
         <motion.div className="drag_container" ref={constraintsRef}>
-          <h1 className='font-Mosk-Ultra-Bold text-[color:var(--P-D-color)] dark:text-[color:var(--P-L-color)]'>Writing.</h1>
+          <h1 className='font-Mosk-Ultra-Bold text-[#404040] dark:text-[#fafafa]'>Writing.</h1>
           <motion.div className="items item1" drag dragConstraints={constraintsRef} >
             <div className="dot_section"><GoPrimitiveDot /><GoPrimitiveDot /><GoPrimitiveDot /></div>
             <div className="box_content">
@@ -50,7 +43,6 @@ const Writing = () => {
                 <Link href='#'>
                   <a>Read post <BsArrowRight /></a>
                 </Link>
-
               </div>
             </div>
           </motion.div>
@@ -66,7 +58,6 @@ const Writing = () => {
                 <Link href='#'>
                   <a>Read post <BsArrowRight /></a>
                 </Link>
-
               </div>
             </div>
           </motion.div>
@@ -79,7 +70,7 @@ const Writing = () => {
 }
 export default Writing
 const WritingSection = styled.section`
-  background: ${props => props.theme === 'light' ? '#b289da' : '#4e3668'};
+  /* background: ${props => props.theme === 'light' ? '#b289da' : '#4e3668'}; */
   z-index: 9;
   position: relative;
   overflow: hidden;

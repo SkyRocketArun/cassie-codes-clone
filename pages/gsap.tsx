@@ -105,7 +105,7 @@ const GsapTest = () => {
             xPercent: newCodes.x,
             yPercent: newCodes.y
         });
-        console.log('Coordinates X', newCodes.x, 'and Y', newCodes.y)
+
     }, [globalCoords]);
     return (
         <MainSection>

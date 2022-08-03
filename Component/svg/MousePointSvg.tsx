@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { gsap } from "gsap";
 import styled from 'styled-components';
 const GsapTest = () => {
-    const [globalCoords, setGlobalCoords] = useState({ x: 2, y: 0 });
+    const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
     const [newCodes, setCodes] = useState({ x: 0, y: 0 })
     const [screenSize, getDimension] = useState({ dynamicWidth: 0, dynamicHeight: 0 });
     // 👇️ get global mouse coordinates
@@ -34,7 +34,7 @@ const GsapTest = () => {
     }, [screenSize])
     useEffect(() => {
         setDimension()
-    }, [])
+    }, [globalCoords])
     // We need to convert those pixel values into percentages of the window height and width.
     function movePointer() {
         const x = percentage(globalCoords.x, screenSize.dynamicWidth) - 50;
@@ -105,7 +105,7 @@ const GsapTest = () => {
             xPercent: newCodes.x,
             yPercent: newCodes.y
         });
-        console.log('Coordinates X', newCodes.x, 'and Y', newCodes.y)
+
     }, [globalCoords]);
     return (
         <MainSection>
