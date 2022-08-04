@@ -1,39 +1,37 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import styled from 'styled-components';
 import GsapTest from '../svg/MousePointSvg';
 import Link from 'next/link'
-// import Lottie from "lottie-react";
-// import Celebration from "../../Assests/Animations/Celebration.json";
 import Lottie from 'react-lottie';
-import * as Celebration from '../../Assests/Animations/Celebration.json'
+import Celebration from '../../Assests/Animations/Celebration.json'
 
 const Footer = () => {
-
-
-    const lottieRef = useRef<any>(null)
-    console.log('+++++++++++', lottieRef.current)
-    const Control = () => {
-        console.log('check play ')
-        console.log('chchchchch', lottieRef.current)
-        lottieRef.current?.play(true);
-        setTimeout(PauseSvg, 3000);
-    }
-    const PauseSvg = () => {
-        console.log('check pause ')
-        console.log('chchchchch', lottieRef.current)
-        lottieRef.current?.pause(false);
-    }
+    const [isPaused, setIsPaused] = useState(false)
+    const [isStopped, setIsStopped] = useState(false)
+    useEffect(() => {
+        setIsStopped(true)
+    }, [])
+    const defaultOptions = {
+        loop: false,
+        autoplay: false,
+        animationData: Celebration,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        }
+    };
 
     return (
         <FooterSection className="Footer bg-[#71ddbd] dark:bg-[#774069]" >
-            <div className='container'>
+            <div className='container svg_box'>
                 <div className='main_section bg-[#fff] dark:bg-[#2c2c2c]'>
                     <div>
                         <h1 className='font-Mosk-Ultra-Bold text-[color:var(--P-D-color)] dark:text-[color:var(--P-L-color)]'>Hey there!</h1>
-                        <Link href='mailto:arun7807224868@gmail.com'>
-                            <a className='text-[22px] cursor-pointer relative z-50' onClick={Control}>Ping me a Message </a>
-                        </Link>
+                        {/* <Link href='mailto:arun7807224868@gmail.com'> */}
+                        <a className='text-[22px] cursor-pointer relative z-50'
+                        // onClick={Control}
+                        >Ping me a Message </a>
+                        {/* </Link> */}
                     </div>
                     <div className='mouse_pointer'>
                         <GsapTest />
@@ -42,11 +40,12 @@ const Footer = () => {
             </div>
 
             <div className='animation' >
-                <Lottie options={{
-                    loop: false,
-                    autoplay: false,
-                    animationData: Celebration,
-                }} ref={lottieRef} />
+                <Lottie options={defaultOptions}
+                    // height={400}
+                    // width={600}
+                    isStopped={isStopped}
+                    isPaused={isPaused}
+                />
             </div>
         </FooterSection>
     )
@@ -57,14 +56,17 @@ const FooterSection = styled.section`
     height: 100vh;
     bottom: 0px;
     z-index: 1;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
+.svg_box{
+    z-index: 999999;
+    position: relative;
+}
+
 .main_section {
   width: 100%;
   height: 500px;
-
   align-items: center;
   justify-content: space-around;
   display: flex;
@@ -80,5 +82,6 @@ const FooterSection = styled.section`
     bottom: 0px;
     height: 100vh;
     width: 100%;
+    z-index:1;
 }
 `

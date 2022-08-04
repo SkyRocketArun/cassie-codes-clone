@@ -125,19 +125,6 @@ const WritingSection = styled.section`
   grid-row-end: 6;
   color: ${props => props.theme === 'light' ? '#404040' : '#fff'};
 }
-.write_button {
-  grid-column-start: 1;
-  grid-row-start: 5;
-  border: ${props => props.theme === 'light' ? '2px solid #404040' : '2px solid #fff'};
-  background: ${props => props.theme === 'light' ? '#f7f7f7' : '#4e3668'};
-  width: fit-content;
-  margin: auto;
-  padding: 12px 30px;
-  box-shadow: 6px 6px 0px 0px #fff;
-  box-shadow:   ${props => props.theme === 'light' ? '6px 6px 0px 0px #404040' : '6px 6px 0px 0px #fff'};
-
-  font-size: 20px;
-}
 .items .btns {
   display: flex;
   justify-content: space-between;
@@ -171,5 +158,18 @@ const WritingSection = styled.section`
   display: flex;
   align-items: center;
   gap: 4px;
+}
+.write_button {
+  grid-column-start: 1;
+  grid-row-start: 5;
+  border: ${props => props.theme === 'light' ? '2px solid #404040' : '2px solid #fff'};
+  background: ${props => props.theme === 'light' ? '#f7f7f7' : '#4e3668'};
+  width: fit-content;
+  margin: auto;
+  padding: 12px 30px;
+  box-shadow: 6px 6px 0px 0px #fff;
+  box-shadow:   ${props => props.theme === 'light' ? '6px 6px 0px 0px #404040' : '6px 6px 0px 0px #fff'};
+
+  font-size: 20px;
 }
 `

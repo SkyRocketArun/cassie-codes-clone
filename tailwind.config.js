@@ -21,7 +21,9 @@ module.exports = {
 
     },
     extend: {
-
+      boxShadow: {
+        'bx': '8px 8px 0px 0px #fff',
+      }
     },
   },
   plugins: [],
